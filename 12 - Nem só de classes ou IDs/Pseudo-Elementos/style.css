@@ -1,0 +1,12 @@
+.antes li::before {
+    content: ">";
+}
+
+.depois li::after {
+    content: ">";
+}
+
+.primeira::first-line {
+    font-weight: bold;
+    color: red;
+}

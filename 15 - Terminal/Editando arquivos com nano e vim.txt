@@ -1,0 +1,15 @@
+nano 
+
+Editor de texto dentro do terminal, funciona para arquivos de texto.
+
+Sintaxe: nano nomedoarquivo
+
+Atalhos:
+Ctrl + o - Salvar o arquivo
+Ctrl + x - Fecha o arquivo
+
+=============================================
+
+vim
+
+Editor de texto mais avançado e personalizavel.

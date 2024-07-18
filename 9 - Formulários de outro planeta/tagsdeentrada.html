@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tags de Entrada</title>
+</head>
+
+<body>
+    <h1>Tags de Entrada</h1>
+    <h2><code>&lt;input&gt;</code></h2>
+    <h3><code>autocomplete</code></h3>
+    <p>Usado para trazer informações que usuário usa com frequência no navegador, e autocompletar</p>
+    <form action="">
+        <input type="password" autocomplete="new-password">
+    </form>
+    <br><br>
+
+    <h3><code>readonly</code></h3>
+    <p>Permite ao usuário apenas ler o conteúdo, mas não editá-lo</p>
+    <input type="text" value="123456" readonly>
+    <p>Diferença do <code>disabled</code>:</p>
+    <input type="text" value="123456" disabled>
+    <br><br>
+
+    <h3><code>pattern</code></h3>
+    <p>Permite uma validação na própria input, como um RegEx</p>
+    <form action="">
+        <input type="password" pattern="[0-9a-fA-F]{4,8}" title="No mínimo 4 caracteres, no máximo 8">
+        <input type="email" pattern=".+@gmail\.com\.br">
+        <input type="url" pattern=".*\.com\.br.*">
+        <button type="submit">Enviar</button>
+    </form>
+    <br><br>
+
+    <h3><code>inputmode</code></h3>
+    <p>Altera o tipo de teclado</p>
+    <form action="">
+        <input type="tel" inputmode="numeric">
+        <button type="submit">Enviar</button>
+    </form>
+    <br><br>
+
+    <h3><code>multiple</code></h3>
+    <p>Aceita multiplos valores em um campo</p>
+    <form action="">
+        <label for="sem">Sem multiple</label><input id="sem" type="email">
+        <label for="com">Com multiple</label><input id="com" type="email" multiple>
+        <button type="submit">Enviar</button>
+    </form>
+    <br>
+    <select name="" id="" multiple>
+        <option value="">-Escolha um-</option>
+        <option value="">Maçã</option>
+        <option value="">Banana</option>
+        <option value="">Pera</option>
+    </select>
+    <br><br>
+
+    <h3><code>size</code></h3>
+    <p>Modifica o tamanho do campo de caracteres aceitos</p>
+    <input type="text" size="5">
+    <br>
+    <select name="" id="" size="3">
+        <option value="">-Escolha um-</option>
+        <option value="">Laranja</option>
+        <option value="">Uva</option>
+        <option value="">Maçã</option>
+        <option value="">Banana</option>
+        <option value="">Pera</option>
+    </select>
+    <br><br>
+
+    <h3><code>spellchecker</code></h3>
+    <p>Habilita ou desabilita a verificação ortográfica</p>
+    <input type="text" spellcheck="false">
+    <br><br>
+
+    <h3><code>accept</code></h3>
+    <p>Determina o tipo de arquivo que a input aceita</p>
+    <form action="" method="post" enctype="multipart/form-data">
+        <!-- Estrutura de formulário necessária para inputs tipo file -->
+        <input type="file" accept="image/*">
+        <input type="file" accept=".png, .jpg, .jpeg" multiple>
+    </form>
+    <br><br>
+
+    <h3><code>checked</code></h3>
+    <p>Deixa marcado as inputs do tipo checkbox e radio</p>
+    <fieldset>
+        <legend>confirma o check</legend>
+        <input type="checkbox" name="interesse" checked>
+        <input type="checkbox" name="interesse">
+        <br>
+        <label for="si">Sim</label>
+        <input type="radio" name="interesses" id="si">
+        <label for="no">Não</label>
+        <input type="radio" name="interesses" id="no" checked>
+    </fieldset>
+    <br><br>
+
+    <h3><code>min / max</code></h3>
+    <p>Delimita o valor númerico minimo e máximo em uma input</p>
+    <form action="">
+        <input type="number" min="5" max="10">
+        <input type="range" min="10" max="80">
+        <button type="submit">Enviar</button>
+    </form>
+    <br><br>
+
+    <h3><code>step</code></h3>
+    <p>Define o intervalo dos botões de ajuda numa input numérica</p>
+    <input type="number" step="100">
+    <input type="range" step="20">
+    <br><br>
+
+    <h2><code>&lt;textarea&gt;</code></h2>
+    <p>Semelhante a input, cria uma caixa de texto maior para digitação, seu tamanho de caracteres suportados é definido
+        pelos atributos <code>rows</code> e <code>cols</code></p>
+    <textarea name="" id="" cols="10" rows="10"></textarea>
+    <br><br>
+
+    <h3><code>wrap</code></h3>
+    <p>Define a quebra de linha da textarea</p>
+    <textarea cols="10" rows="10" wrap="off"></textarea>
+    <br><br>
+
+    <h2><code>&lt;optgroup&gt;</code></h2>
+    <p>Cria um grupo de opções dentro de um select</p>
+    <select name="" id="">
+        <optgroup label="Carros">
+            <option value="">BMW</option>
+            <option value="">Opala</option>
+            <option value="">Ferrari</option>
+        </optgroup>
+        <optgroup label="Frutas">
+            <option value="">Manga</option>
+            <option value="">Uva</option>
+            <option value="">Pera</option>
+        </optgroup>
+        <optgroup label="Pets">
+            <option value="">Cachorro</option>
+            <option value="">Gato</option>
+            <option value="">Jabuti</option>
+        </optgroup>
+    </select>
+</body>
+
+</html>

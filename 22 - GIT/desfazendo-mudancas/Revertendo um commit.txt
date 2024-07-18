@@ -1,0 +1,1 @@
+git revert HEAD~numerodocommit - volta até o commit selecionado e o substitui por um novo commit.

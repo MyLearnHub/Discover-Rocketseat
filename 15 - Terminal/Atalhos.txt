@@ -1,0 +1,11 @@
+Setinhas
+* Para cima - volta um comando
+* Para baixo - avança um comando
+
+Ctrl 
+* Setas para o lado - pulam palavras
+* A - volta pro ínicio da linha
+* E - volta pro final da linha
+* U - limpa a linha
+* K - remove do cursor até o final da linha
+* L - limpa a tela

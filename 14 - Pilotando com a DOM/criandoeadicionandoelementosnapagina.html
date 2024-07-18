@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criando e adicionando elementos na página</title>
+</head>
+
+<body>
+    <header>
+        Olá
+    </header>
+</body>
+
+</html>
+
+<script>
+    // Criando elementos
+    const div = document.createElement('div')
+    const div2 = document.createElement('div')
+    const div3 = document.createElement('div')
+    const div4 = document.createElement('div')
+    const header = document.querySelector('header')
+    div.innerText = "Olá Devs"
+    div2.innerText = "Eu primeiro"
+    div3.innerText = "Eu entre elementos"
+    div4.innerText = "Eu entre elementos também"
+
+    const body = document.querySelector('body')
+    // Adicionando o elemento criado a página como ultimo filho
+    body.append(div)
+
+    // Adicionando o elemento criado a página como ultimo filho
+    body.prepend(div2)
+
+    // Adiciona um elemento criado tendo como refêrencia o próximo elemento
+    body.insertBefore(div3, header)
+
+    // Adiciona um elemento criado tendo como refêrencia o elemento anterior
+    body.insertBefore(div4, header.nextSibling)
+</script>

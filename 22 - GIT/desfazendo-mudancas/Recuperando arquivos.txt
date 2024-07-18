@@ -1,0 +1,7 @@
+git checkout iniciodocommit -- nomedoarquivo - esse comando permite buscar e trazer arquivos usando o código hash do commit.
+
+Por exemplo: git checkout cde3372abc23 -- README.md
+
+Depois de encontrado usamos: git restore --staged nomedoarquivo para inclui-lo na stagearea
+
+e por fim usamos o git add como um arquivo comum

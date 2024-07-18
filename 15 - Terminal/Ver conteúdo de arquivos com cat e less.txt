@@ -1,0 +1,13 @@
+less (menos)
+
+Abre o arquivo no terminal e depois fecha usando Ctrl + Q.
+
+Sintaxe: less nomedoarquivo
+
+==============================================================
+
+cat (gato)
+
+Printa o conteúdo do arquivo no terminal, não funciona em arquivos que não sejam de texto.
+
+Sintaxe cat nomedoarquivo

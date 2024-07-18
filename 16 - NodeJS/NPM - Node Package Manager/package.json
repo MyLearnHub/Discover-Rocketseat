@@ -1,0 +1,20 @@
+{
+  "name": "pacote-inicial",
+  "version": "1.0.0",
+  "description": "Aprendendo Node",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [
+    "aprendendo",
+    "node",
+    "javascript",
+    "programação"
+  ],
+  "author": "Paulo Alvares",
+  "license": "ISC",
+  "devDependencies": {
+    "cfonts": "^3.2.0"
+  }
+}

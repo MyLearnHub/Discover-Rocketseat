@@ -1,0 +1,10 @@
+mkdir - make directory (fazer diretório)
+
+Cria um diretório.
+
+Sintaxe: mkdir nomedodiretório (cria um diretório),
+	 mkdir diretorio1 diretorio2 diretorio3 (cria varios diretórios)
+
+Variações:
+mkdir -p - Cria subpastas ou parents (mkdir -p nomedodiretorio/nomedasubpasta)
+

@@ -1,0 +1,3 @@
+git mv nomeantigo nomenovo - renomeia o arquivo diretamente pelo terminal
+
+Se o arquivo foi renomeado fora do terminal bash, remova ele e depois use git add, ele interpreta como renamed

@@ -1,0 +1,3 @@
+git diff - explica todos os arquivos alterados linha a linha.
+
+git diff --staged - explica os arquivos locais e os compara com os arquivos na área staged. (também funciona git diff --cached)

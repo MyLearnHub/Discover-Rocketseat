@@ -1,0 +1,11 @@
+ls - list directory contents (listar conteúdo do diretório)
+
+Lista arquivos e pastas dentro do diretório.
+
+Variações:
+ls -l - Traz mais informações, em ordem, a permissão do arquivo, dono, grupo, tamanho, dia e hora.
+ls -lh - Traz informações com métricas de linguagem humana, como unidades de medida.
+ls -a - Traz todos os arquivos, inclusive os ocultos.
+ls -h - Traz informações em linguagem humana.
+ls -r - Traz as informações recursivas, como arquivos dentro de pastas dentro do diretório atual.
+ls -s - Traz as informações ordenadas pelo tamanho.

@@ -1,0 +1,8 @@
+.caixin{
+    height: 100px;
+    width: 100px;
+    background: red;
+    position: relative;
+    top: 40px;
+    left: 70px;
+}

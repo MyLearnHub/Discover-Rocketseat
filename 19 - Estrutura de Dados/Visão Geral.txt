@@ -1,0 +1,11 @@
+Visão Geral
+
+* Usamos estrutura de dados para gerenciar os dados, as informações da nossa aplicação
+
+* Organiza, ordenar, buscar, são algumas funcionalidades básicas
+
+* Melhorar a escrita de algoritmos
+
+* Melhorar a eficiência dos nossos aplicativos
+
+* Existem muitas estruturas a serem estudadas

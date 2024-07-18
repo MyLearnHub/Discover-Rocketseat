@@ -1,0 +1,3 @@
+git clean -n - lista os arquivos não rastreados
+
+git clean -f - força a exclusão de arquivos não rastrados, use com cuidado por que ele não pode ser revertido nem mesmo pela lixeira.

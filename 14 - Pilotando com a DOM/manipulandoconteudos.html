@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulando Conteúdos</title>
+</head>
+
+<body>
+    <h1>Manipulando Conteúdos</h1>
+    <h2>textContent</h2>
+    <p id="text">Edite-me</p>
+    <br>
+
+    <h2>innerText</h2>
+    <p id="innerT">Edite-me</p>
+    <br>
+
+    <h2>innerHTML</h2>
+    <p id="innerH">Edite-me</p>
+    <br>
+
+    <h2>value</h2>
+    <input type="text" id="input">
+    <br>
+
+    <h2>Manipulando atributos</h2>
+    <h3>setAttribute</h3>
+    <header>
+        <h5>Olá</h5>
+    </header>
+    <br>
+
+    <h3>removeAttribute</h3>
+</body>
+
+</html>
+
+<script>
+    // Modifica o conteúdo de texto
+    const element = document.querySelector('#text')
+    element.textContent += 'Conteúdo manipulado por JavaScript'
+
+    // Modifica o conteúdo de texto mas permite adição de conteúdo
+    const element2 = document.querySelector('#innerT')
+    element2.innerText += ', Olá Devs'
+
+    // Permite inserção de tags HTML
+    const element3 = document.querySelector('#innerH')
+    element3.innerHTML = 'Conteúdo manipulado por JavaScript <code>&lt;code&gt;</code>'
+
+    // Permite alterar o valor de um elemento
+    const element4 = document.querySelector('#input')
+    element4.value = 'Senha'
+
+    // Adiciona um atributo a um elemento
+    const element5 = document.querySelector('header')
+    element5.setAttribute('id', 'IDProHeader')
+    const headerComId = document.querySelector('#IDProHeader')
+    console.log(headerComId)
+
+    // Remove um atributo de um elemento
+    element5.removeAttribute('id')
+    console.log(headerComId)
+</script>

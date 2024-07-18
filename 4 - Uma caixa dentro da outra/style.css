@@ -1,0 +1,24 @@
+/* box-sizing */
+.caixapai {
+    display: flex;
+}
+
+.caixa {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    border: 1px solid red;
+    padding: 20px;
+}
+
+#combox {
+    border: 1px solid blue;
+    box-sizing: border-box;
+}
+
+/* Display: inline x block */
+#inline {
+    border: 1px solid blue;
+    display: inline;
+    padding: 0;
+}

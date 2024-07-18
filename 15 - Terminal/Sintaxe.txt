@@ -1,0 +1,24 @@
+A sintaxe dos comandos no terminal se baseia em:
+
+Comando 
+- Programa que está rodando
+- Obrigatório
+
+Opções
+- Mudar o comportamento 
+- Explicar ao comando como deve funcionar
+- Geralmente começa com um traço (-)
+- Geralmente uma letra basta
+- A maioria oferece mais opções
+
+Argumentos
+- Onde o comando vai operar
+- Caminho do arquivo ou diretório
+
+
+Exemplo:
+ls -lh /usr/bin
+
+ls - lista os diretórios (Comando)
+-lh - adiciona o formato de lista longa legível para humanos (Opção). 
+/usr/bin - indica o arquivo ou diretório que quero acessar (Argumento)

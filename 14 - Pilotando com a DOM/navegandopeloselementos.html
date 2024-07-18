@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navegando pelos elementos</title>
+</head>
+
+<body>
+    <header>
+        <h1>Manipulando Estilos e Classes</h1>
+    </header>
+
+    <footer>
+        <h2>Olá</h2>
+    </footer>
+</body>
+
+<script>
+    // Exibindo o elemento pai do body
+    const corpo = document.querySelector('body')
+    console.log(corpo.parentNode)
+    console.log(corpo.parentElement)
+
+    // Exibe os elementos filhos de body, retorna uma NodeList (considera espaços vazios)
+    console.log(corpo.childNodes)
+
+    // Exibe os elementos filhos de body, retorna uma HTMLCollection (não considera oque não é elemento)
+    console.log(corpo.children)
+
+    // Pega o primeiro filho
+    console.log(corpo.firstChild)
+
+    // Pega o primeiro elemento filho
+    console.log(corpo.firstElementChild)
+
+    // Pega o último filho
+    console.log(corpo.lastChild)
+
+    // Pega o último elemento filho
+    console.log(corpo.lastElementChild)
+
+    // Pega o próximo irmão
+    const cabeça = document.querySelector('header')
+    console.log(cabeça.nextSibling)
+
+    // Pega o próximo elemento irmão
+    console.log(cabeça.nextElementSibling)
+
+    // Pega o irmão anterior
+    const pe = document.querySelector('footer')
+    console.log(cabeça.previousSibling)
+
+    // Pega o elemento irmão anterior
+    console.log(cabeça.previousElementSibling)
+</script>

@@ -1,0 +1,4 @@
+Para restaurar as modificações feitas antes de entrar em staged, usamos:
+git restore
+
+Usamos também git restore --staged para tirar o arquivo da área de staged.

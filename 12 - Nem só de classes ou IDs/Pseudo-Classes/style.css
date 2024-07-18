@@ -1,0 +1,29 @@
+ul li:first-child {
+    font-weight: bold;
+}
+
+.article p:nth-of-type(2) {
+    font-weight: bold;
+    color: red;
+}
+
+.artigo p:nth-child(2) {
+    font-weight: bold;
+    color: red;
+}
+
+.parimpar ul li:nth-child(even) {
+    color: blue;
+}
+
+.parimpar ul li:nth-child(odd) {
+    color: gray;
+}
+
+input:disabled {
+    background: red;
+}
+
+input:required {
+    background: green;
+}

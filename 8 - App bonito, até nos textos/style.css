@@ -1,0 +1,47 @@
+.alterafont{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    font-variant: small-caps;
+}
+
+.estreitafont{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    font-stretch: extra-expanded;
+}
+
+.espacafont{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    letter-spacing: 10px;
+}
+
+.espacaword{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    word-spacing: 10px;
+}
+
+.espacalinha{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    line-height: 2em;
+}
+
+.transforma{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.decora{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    text-decoration: underline solid red;
+}
+
+.sombreia{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    text-shadow: 2px 2px 2px red;
+}

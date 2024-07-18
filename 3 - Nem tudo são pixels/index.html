@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nem tudo são pixels</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Nem tudo são pixels</h1>
+    <h2>Tipos númericos</h2>
+    <p><code>&lt;integer&gt;</code> - Número inteiro: 10, 223, -65</p>
+    <p><code>&lt;number&gt;</code> - Número decimal: 2.4, 61, 0.234</p>
+    <p><code>&lt;dimension&gt;</code> - É um &lt;number&gt; com uma unidade de medida: 90deg, 2s, 8px</p>
+    <p><code>&lt;porcentagem&gt;</code> - Número fracionado: 50%</p>
+    <br>
+
+    <h2>Unidades comuns</h2>
+    <p><code>&lt;length&gt;</code> - Valor de distância: px, em, vw</p>
+    <p><code>&lt;angle&gt;</code> - Representa um ângulo: deg, rad, turn</p>
+    <p><code>&lt;time&gt;</code> - Representa tempo: s, ms</p>
+    <p><code>&lt;resolution&gt;</code> - Resoluções para dispositivos: dpi</p>
+    <br>
+
+    <h2>Distâncias absolutas</h2>
+    <table>
+        <caption>São fixas e não alteram seu valor</caption>
+        <thead>
+            <tr>
+                <th>Unidade</th>
+                <th>Nome</th>
+                <th>Equivalência</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>cm</td>
+                <td>Centímetros</td>
+                <td>1cm = 96px / 2.54</td>
+            </tr>
+            <tr>
+                <td>in</td>
+                <td>Inches (polegadas)</td>
+                <td>1in = 2.54cm = 96px</td>
+            </tr>
+            <tr>
+                <td>px</td>
+                <td>Pixels</td>
+                <td>1px = 1/96th de 1in</td>
+            </tr>
+        </tbody>
+    </table>
+    <br><br>
+
+    <h2>Distâncias relativas</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Unidade</th>
+                <th>Relativo a</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>em</td>
+                <td>Tamanho do pai</td>
+            </tr>
+            <tr>
+                <td>rem</td>
+                <td>Tamanho do elemento raiz (root/html)</td>
+            </tr>
+            <tr>
+                <td>vw</td>
+                <td>1% da viewport widht</td>
+            </tr>
+            <tr>
+                <td>vh</td>
+                <td>1% da viewport height</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>

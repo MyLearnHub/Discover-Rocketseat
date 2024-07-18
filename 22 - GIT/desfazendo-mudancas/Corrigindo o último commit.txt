@@ -1,0 +1,3 @@
+git commit --amend - Ele permite reparar o commit, sendo que amend, significa remendar.
+
+git commit --amend -m'novamensagem' - Altera a mensagem do commit

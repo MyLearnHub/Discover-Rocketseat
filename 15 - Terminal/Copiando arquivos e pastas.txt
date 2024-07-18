@@ -1,0 +1,8 @@
+cp - copy (copiar)
+
+Copia arquivos ou pastas
+
+Sintaxe: cp arquivo1.txt arquivo2.txt (Copia o arquivo 1 para o arquivo2)
+
+Variações:
+cp -r - Permite a cópia recursiva, permitindo copiar diretórios (cp -r site1 site2 site3 sites, manda todos as pastas site para dentro da pasta sites)

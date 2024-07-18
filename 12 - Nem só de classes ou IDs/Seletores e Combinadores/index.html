@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletores e Combinadores</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Seletores e Combinadores</h1>
+    <h2>Seletores</h2>
+    <h3><code>[title]</code></h3>
+    <p>É possível selecionar atributos específicos do HTML e estiliza-los com CSS usando as "[]"</p>
+    <h1 title="Ele tem mesmo um title">EU TENHO UM TITLE</h1>
+    <br>
+
+    <h2>Combinadores</h2>
+    <p>Chamamos de combinadores os elementos que estão aninhados, como um article dentro de um body</p>
+    <br>
+
+    <h3>> - child combinator</h3>
+    <p>Torna mais fácil de selecionar elementos filhos específicos</p>
+    <div id="child">
+        <div class="child">
+            <ul>
+                <li>Item a estilizar</li>
+
+                <ul>
+                    <li>Item que não vai ser estilizado</li>
+                </ul>
+            </ul>
+        </div>
+    </div>
+    <br><br>
+
+    <h3>+ - combinador irmão</h3>
+    <p>Ele seleciona o irmão direto na hierarquia</p>
+    <h1>Título</h1>
+    <p>Paragráfo 1</p>
+    <p>Paragráfo 2</p>
+    <button>Um botão</button>
+    <button>Outro botão</button>
+    <br><br>
+
+    <h3>~ - seletor de irmão geral</h3>
+    <p>Seleciona todos os irmãos diretos na hierarquia</p>
+    <div class="irmao">
+        <h1>Título</h1>
+        <p>Paragráfo 1</p>
+        <p>Paragráfo 2</p>
+    </div>
+</body>
+
+</html>

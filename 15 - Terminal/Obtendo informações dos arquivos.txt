@@ -1,0 +1,13 @@
+file (arquivo)
+
+Sintaxe: file "nome do arquivo".tipo do arquivo
+
+Traz informações sobre o arquivo, como o tipo dele, dimensão (em caso de imagens), tamanho, etc.
+
+================================================================================================
+
+stat (status)
+
+Sintaxe: stat "nome do arquivo".tipo do arquivo
+
+Traz informações como o dono do arquivo, modificações e o tamanho.

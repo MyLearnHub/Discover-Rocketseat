@@ -1,0 +1,8 @@
+cd - change directory (mudar diretório)
+
+Muda o diretório acompanhando as opções e argumentos.
+
+Variações:
+cd . - vai para o diretório atual
+cd .. - volta um diretório (../, sem o cd é um atalho)
+cd - - volta de onde veio

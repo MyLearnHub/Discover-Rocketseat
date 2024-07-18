@@ -1,0 +1,9 @@
+rm - remove (remover)
+
+Remove arquivos ou pastas.
+
+Sintaxe: rm file1.txt file2.txt (remove os arquivos file1 e file2)
+
+Variações:
+rm -r - Permite remover pastas usando a recursividade (rm -r site, remove a pasta site)
+rm -f - Força o comando remover

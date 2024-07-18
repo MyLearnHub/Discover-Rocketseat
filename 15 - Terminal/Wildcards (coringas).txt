@@ -1,0 +1,7 @@
+Wildcards (coringas)
+
+* - usado para 1 ou mais caracteres
+Ex: mv sites/si* sites2 (move tudo que tem dentro de sites que começa com si para sites2)
+
+? - usado para apenas 1 caractere
+Ex: mv sites/site* sites2

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uma caixa dentro da outra</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Uma caixa dentro da outra</h1>
+    <h2>Box Model</h2>
+    <p>Um modelo de caixas que facilita o desenvolvimento de Design Web</p>
+    <ul>
+        <li>Tamanho (Largura x Altura) - width | heigth</li>
+        <li>Conteúdo - content</li>
+        <li>Borda - border</li>
+        <li>Preenchimento Interno - padding</li>
+        <li>Preenchimento Externo - margin</li>
+    </ul>
+    <br>
+
+    <h2>Box-Sizing</h2>
+    <p>Usado para definir o tamanho de um elemento em relação a borda ao invés do conteúdo</p>
+    <div class="caixapai">
+        <div class="caixa" id="sembox">HTML</div>
+        <div class="caixa" id="combox">CSS</div>
+    </div>
+    <br>
+
+    <h2>block x inline</h2>
+    <p>Define como os elementos se comportam em relação a outros elementos</p>
+    <div class="caixapai">
+        <div>
+            <h3><code>display: block</code></h3>
+            <ul>
+                <li>Ocupa toda a linha colocando o próximo elemento pra baixo</li>
+                <li>width e heigth são respeitados</li>
+                <li>padding, margin e border tem funcionamento padrão</li>
+            </ul>
+        </div>
+        <div>
+            <h3><code>display: inline</code></h3>
+            <ul>
+                <li>Elemento um ao lado do outro</li>
+                <li>width e heigth não funcionam</li>
+                <li>somente valores na horizontal de padding, margin e border</li>
+            </ul>
+        </div>
+    </div>
+    <div class="caixa">HTML</div>
+    <div class="caixa" id="inline">CSS</div>
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulando Estilos e Classes</title>
+
+    <style>
+        .active{
+            color: red;
+        }
+
+        .green{
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Manipulando Estilos e Classes</h1>
+    <p id="estilo">Edite-me</p>
+    <br><br><br>
+
+    <header>
+        <h1>Meu Blog</h1>
+    </header>
+    <br>
+</body>
+
+<script>
+    const element = document.querySelector('#estilo')
+    element.style.backgroundColor = '#f01'
+
+    const corpo = document.querySelector('body')
+    // Adiciona uma classe ao elemento
+    corpo.classList.add('.active', 'green')
+
+    // Remove a classe de um elemento *Comenta pra ver a diferença*
+    corpo.classList.remove('.active')
+
+    // Troca a classe de um elemento
+    corpo.classList.toggle('.active')
+
+    console.log(corpo.classList)
+
+</script>

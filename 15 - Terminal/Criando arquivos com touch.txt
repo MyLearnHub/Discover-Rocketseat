@@ -1,0 +1,7 @@
+touch (tocar)
+
+Cria um ou mais arquivos e altera os registros de data e hora de arquivos e pastas.
+
+Sintaxe: touch nomedodiretorio (para alterar a data e hora),
+	 touch arquivo.txt (cria um arquivo),
+	 touch arquivo1.txt arquivo2.txt site6 (cria 2 arquivos de texto e um arquivo vazio)

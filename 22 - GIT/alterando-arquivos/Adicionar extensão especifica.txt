@@ -1,0 +1,6 @@
+Adicionamos os arquivos de uma unica extensão usando git add *.extensão
+
+Por exemplo:
+git add *.js
+git add *.css
+git add *.txt

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guia estelar de CSS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Guia estelar de CSS</h1>
+    <h2>Anatomia do CSS</h2>
+    <p>
+        A anatomia do CSS consiste em 4 partes, são elas: <br>
+        Seletor - Ex: <code>h1</code>. <br>
+        Declaração - Ex: <code>color: red</code>. <br>
+        Propriedade - Ex: <code>font-size:</code>. <br>
+        Valor da Propriedade - Ex: <code>60px</code>.
+        <br><br>
+        Um exemplo de elemento sendo estilizado: <br>
+    <pre>
+            h1 {
+                color: blue;
+                font-size: 60px;
+                background: gray;
+            }
+        </pre>
+    </p>
+    <br>
+
+    <h2>Seletores</h2>
+    <p>Os principais tipos de seletores são:</p>
+    <ul>
+        <li>Seletor Global: <code>*</code> - Seleciona todos os elementos da página</li>
+        <li>Seletor de Elemento: <code>h1</code>, <code>h2</code>, <code>p</code>, <code>div</code></li>
+        <li>Seletor de ID: <code>#box</code>, <code>#container</code></li>
+        <li>Seletor de Class: <code>.red</code>, <code>.m-4</code></li>
+    </ul>
+    <br>
+
+    <h2>Especificidade</h2>
+    <p>É um cálculo matemático, onde, cada tipo de seletor e origem do estilo, possuem valores a serem considerados.</p>
+    <ul>
+        <li>0 - Seletor Universal, combinadores e pseudo-classes de negação</li>
+        <li>1 - Seletor de Elemento e pseudo-elementos</li>
+        <li>10 - Seletor de class e atributos</li>
+        <li>100 - Seletor de ID</li>
+        <li>1000 - CSS Inline</li>
+        <li>!important - Absoluto</li>
+    </ul>
+    <br>
+
+    <h2>At-rules</h2>
+    <p>Define e se relaciona com alguns comportamentos do CSS, sempre indicado pelo caractere "@"</p>
+    <ul>
+        <li>@import - Incluir um CSS externo</li>
+        <li>@media - Regras condicionais para dispositivos</li>
+        <li>@font-face - Fontes externas</li>
+        <li>@keyframes - Animações</li>
+    </ul>
+    <br>
+
+    <h2>Shorthand</h2>
+    <p>Tem como finalizade resumir códigos, juntar propriedades e tornar o código mais legível.</p>
+    <p>Propriedades padrão:</p>
+    <code>background-color: #f1f1f1;</code><br>
+    <code>background-image: url(images/exemploimage.jpg);</code><br>
+    <code>background-repeat: no-repeat;</code><br>
+    <code>background-position: left top;</code><br>
+    <p>Shorthand:</p>
+    <code>background: #f1f1f1 url(images/exemploimage.jpg) no-repeat left top;</code>
+    <br><br>
+
+    <h2>Funções</h2>
+    <p>Lidam com valores de maneira mais fácil no CSS</p>
+    <code>@import url('http://urlaqui.com/style.css')</code><br>
+    <code>color:rgb(255, 124, 0)</code><br>
+    <code>width: calc(100% - 10px)</code>
+    <br><br>
+
+    <h2>Vendor Prefixes (Prefixos de Navegador)</h2>
+    <p>Servem para interagir com elementos específicos em navegadores</p>
+    <ul>
+        <li><code>-webkit - Chrome, Safari, IOS e Android</code></li>
+        <li><code>-moz - Mozilla (Firefox)</code></li>
+        <li><code>-ms - Internet Explorer</code></li>
+        <li><code>-o - Opera</code></li>
+    </ul>
+</body>
+
+</html>

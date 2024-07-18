@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+</head>
+
+<body>
+    <h1>Guia estelar de HTML</h1>
+
+    <h2>Criando a tabela</h2>
+    <p>Usamos a tag <code>&lt;table&gt;</code> para o elemento de tabela, acompanhada das tags <code>&lt;thead&gt;</code> (cabeçario da tabela), <code>&lt;tbody&gt;</code> (corpo da tabela) e <code>&lt;tfoot&gt;</code> (rodapé da tabela)</p>
+    <br>
+
+    <h2>Populando a tabela</h2>
+    <p>Para popular a tabela usamos as tags <code>&lt;tr&gt;</code> (table row - linha da tabela), <code>&lt;th&gt;</code> (table head - cabeçario da tabela) e <code>&lt;td&gt;</code> (table description - descrição da tabela)</p>
+    <br>
+
+    <h2>Titulando a tabela</h2>
+    <p>Para descrever a tabela ou titula-la usamos a tag <code>&lt;caption&gt;</code></p>
+    <br>
+
+    <table>
+        <caption>Trabalhadores do semestre</caption>
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Idade</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Paulo</td>
+                <td>19</td>
+            </tr>
+            <tr>
+                <td>Pedro</td>
+                <td>20</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Total:</td>
+                <td>2 pessoas</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <h2>Lidando com tabelas complexas</h2>
+
+    <h3><code>rowspan</code></h3>
+    <p>Atributo usado para fazer uma linha da tabela ocupar um determinado espaço</p>
+    <br>
+
+    <h3><code>colspan</code></h3>
+    <p>Atributo usado para fazer uma coluna da tabela ocupar um determinado espaço</p>
+    <br>
+
+    <table>
+        <caption>Produzidos x Vendidos por loja</caption>
+        <thead>
+            <tr>
+                <th rowspan="2"></th>
+                <th colspan="2">Loja 1</th>
+                <th colspan="2">Loja 2</th>
+            </tr>
+
+            <tr>
+                <th>Produzidos</th>
+                <th>Vendidos</th>
+                <th>Produzidos</th>
+                <th>Vendidos</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <th>Vassouras</th>
+                <td>50</td>
+                <td>30</td>
+                <td>20</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <th>Baldes</th>
+                <td>10</td>
+                <td>10</td>
+                <td>30</td>
+                <td>25</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h3><code>&lt;colgroup&gt;</code></h3>
+    <p>Usado para agrupar as colunas, facilitando sua estilização</p>
+    <br>
+
+    <h4><code>span</code></h4>
+    <p>Atributo usado dentro da tag <code>&lt;colgroup&gt;</code> para determinar o espaço ocupado pela coluna</p>
+
+    <table>
+        <caption>Produzidos x Vendidos por loja</caption>
+
+        <colgroup>
+            <col>
+            <col span="2" style="background-color: red;">
+            <col span="2" style="background-color: blue;">
+        </colgroup>
+        
+        <thead>
+            <tr>
+                <th rowspan="2"></th>
+                <th colspan="2" scope="colgroup">Loja 1</th>
+                <th colspan="2" scope="colgroup">Loja 2</th>
+            </tr>
+
+            <tr>
+                <th scope="col">Produzidos</th>
+                <th scope="col">Vendidos</th>
+                <th scope="col">Produzidos</th>
+                <th scope="col">Vendidos</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <th scope="row">Vassouras</th>
+                <td>50</td>
+                <td>30</td>
+                <td>20</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <th scope="row">Baldes</th>
+                <td>10</td>
+                <td>10</td>
+                <td>30</td>
+                <td>25</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Acessibilidade</h2>
+    <p>Para facilitar o entedimento do navegador e consequentemente a demonstração para o usuário é importante rotular a tabela</p>
+    <h3><code>scope</code></h3>
+    <p>Usada principalmente na tag <code>&lt;th&gt;</code>, ela define o escopo daquela célula</p>
+</body>
+
+</html>

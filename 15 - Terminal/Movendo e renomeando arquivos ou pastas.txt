@@ -1,0 +1,7 @@
+mv - move (mover)
+
+Move e renomeia arquivos ou pastas.
+
+Sintaxe: mv arquivo.txt sites (move o arquivo para a pasta sites),
+	 mv site1 site2 sites (move as pastas site para a pasta sites),
+	 mv file.txt arquivo.txt (renomeia o arquivo file para arquivo)

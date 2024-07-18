@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estrutura</title>
+</head>
+
+<body>
+    <h1>Estrutura</h1>
+    <h2><code>&lt;form&gt;</code></h2>
+    <p>Elemento acompanhado dos atributos padrões <code>action</code> e <code>method</code></p>
+    <br>
+
+    <h3>action</h3>
+    <p>Usado para enviar os dados coletados no formulário para algum lugar, se vazio, ele envia para a própria página
+        atual</p>
+    <br>
+
+    <h3>method</h3>
+    <p>Usado para determinar se é um metódo GET ou POST</p>
+    <br>
+
+    <h2><code>&lt;fieldset&gt;</code></h2>
+    <p>Usado para fazer agrupamento de campos</p>
+    <p>Acompanhado de 3 principais atributos, <code>disabled, form</code> e <code>name</code></p>
+    <ul>
+        <li>disabled - Desabilita todos os elementos dentro dele, não submete ao formulário</li>
+        <li>form - Qual formulário esse fieldset pertence (indicado por um id no formulário)</li>
+        <li>name - O nome do grupo de fieldset</li>
+    </ul>
+    <form id="contato" action="">
+        <button>Enviar</button>
+    </form>
+
+    <fieldset form="contato" name="inputs-contats">
+        <label for="">Nome:</label>
+        <input type="text">
+    </fieldset>
+    <br>
+
+    <h2><code>&lt;legend&gt;</code></h2>
+    <p>Usado para indicar o nome do agrupamento visualmente, primeiro elemento do fieldset</p>
+    <form id="contato" action="">
+        <button>Enviar</button>
+    </form>
+
+    <fieldset form="contato" name="inputs-contats">
+        <legend>Dados do usuário</legend>
+        <label for="">Nome:</label>
+        <input type="text">
+    </fieldset>
+    <br>
+
+    <h2><code>&lt;label&gt;</code></h2>
+    <p>É usada para referênciar uma input</p>
+    <label>Nome:<input type="text"></label>
+    <label for="sobrenome">Sobrenome</label>
+    <input id="sobrenome" type="text">
+    <br>
+
+    <h2><code>&lt;button&gt;</code></h2>
+    <p>Cria um botão dentro do formulário</p>
+    <p>Atributos importantes:</p>
+    <ul>
+        <li>type - define a função daquele botão, button (padrão), reset (reseta os dados nas inputs) e submit (envia os dados do formulário)</li>
+        <li>autofocus - responsável por chamar a atenção do navegador ao entrar na página, facilitando o envio</li>
+        <li>disabled - desabilita o botão</li>
+        <li>name - da nome ao botão</li>
+        <li>value - coloca um valor no botão</li>
+        <li>form - indica o formulário do botão</li>
+    </ul>
+    <br>
+
+    <h2><code>&lt;datalist&gt;</code></h2>
+    <p>Semelhante ao select, ele cria uma lista de opções (dentro de uma input), permitindo a digitação para um novo valor</p>
+    <datalist id="frutas">
+        <option>maçã</option>
+        <option>banana</option>
+        <option>uva</option>
+        <option>pera</option>
+        <option>melancia</option>
+    </datalist>
+    <input type="text" list="frutas" placeholder="Escolha a fruta">
+
+    <datalist id="cores">
+        <option>#ff0000</option>
+        <option>#00ff00</option>
+        <option>#0000ff</option>
+        <option>#ffff00</option>
+        <option>#00ffff</option>
+        <option>#ff00ff</option>
+    </datalist>
+    <input type="color" list="cores">
+    <br>
+</body>
+
+</html>

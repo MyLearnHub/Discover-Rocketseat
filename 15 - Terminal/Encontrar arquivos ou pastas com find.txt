@@ -1,0 +1,14 @@
+find (encontrar)
+
+Encontra arquivos ou diretórios.
+
+Sintaxe: find nomedapasta argumento,
+	 find . -type f -name "*.mp4" (Nesse exemplo ele procura em todos os lugares da pasta atual arquivos do tipo file com qualquer nome desde que possua mp4).
+
+Destrinchando:
+find - comando
+. - explicita que deve procurar na pasta atual
+-type f - indica o tipo como file (variação possível seria o d de directory (diretório))
+-name "*.mp4" - indica o nome do arquivo como qualquer um desde que tenha .mp4 (em alguns casos é possível usar também -iname como argumento, ele ignora mauscúlas e minúsculas).
+
+

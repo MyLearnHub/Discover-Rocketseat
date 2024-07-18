@@ -1,0 +1,34 @@
+.box {
+    display: flex;
+    border: 1px dashed red;
+    width: 160px;
+}
+
+.box div {
+    border: 1px solid;
+}
+
+.basis div {
+    flex-basis: 25%;
+}
+
+.grow div:nth-child(2),
+.grow div:nth-child(3) {
+    flex-grow: 1; /* Aqui ele está dando uma fração do espaço em branco para cada um dos elementos */
+}
+
+.grow div:nth-child(1){
+    flex-grow: 2; /* Aqui ele está dando duas frações do espaço em branco para o elemento */
+}
+
+.shrink div{
+    flex-basis: 100%;
+}
+
+/* .box div:nth-child(2){
+    flex-shrink: 0; Ao colocar como 0, significa que ele não vai mais encolher 
+} */
+
+.box div:nth-child(3){
+    flex-shrink: 2; /* Ao colocar como 2, significa que eles está dando espaço para outros elementos */
+}

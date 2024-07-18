@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posso ver e ouvir o HTML</title>
+</head>
+
+<body>
+    <h1>Posso ver e ouvir o HTML</h1>
+    <h2><code>&lt;video&gt;</code></h2>
+    <p>Utilizada para trazer videos ao HTML</p>
+    <video width="500" src="animation.mp4" controls></video>
+    <p>Importante o uso do atributo <code>controls</code>, ele traz os controles padrões do navegador para
+        acessibilidade do usuário</p>
+    <p>Vídeo sem o atributo <code>controls</code>:</p>
+    <video width="500" src="animation.mp4"></video>
+    <br><br>
+
+    <h2><code>&lt;source&gt;</code></h2>
+    <p>A tag source também indica uma mídia, porém ela explica ao navegador o tipo daquela mídia com o atributo
+        <code>type</code></p>
+    <video width="500" controls>
+        <source src="animation.mp4" type="video/mp4">
+    </video>
+    <br><br><br><br>
+
+    <h2>Atributos que acompanham a tag <code>&lt;video&gt;</code></h2>
+    <h3><code>autoplay</code> e <code>muted</code></h3>
+    <p>Faz o vídeo iniciar automaticamente e mutado respectivamente</p>
+    <video src="animation.mp4" controls width="500" autoplay muted></video>
+    <br>
+
+    <h3><code>heigth</code> e <code>width</code></h3>
+    <p>Define a altura e largura do vídeo, mas melhor usar o CSS</p>
+    <video src="animation.mp4" height="100" width="300" controls></video>
+    <br>
+
+    <h3><code>preload</code></h3>
+    <p>Define o comportamento e por tabela a qualidade de reprodução do vídeo</p>
+    <ul>
+        <li>valor "auto" - Faz o preload do vídeo antes do usuário apertar no botão, adiantando seu desempenho</li>
+        <li>valor "metadata" - Faz o preload apenas do necessário para o vídeo funcionar</li>
+        <li>valor "none" - Não faz preload de nada, espera o play do usuário para processá-lo</li>
+    </ul>
+    <video src="animation.mp4" width="500" controls preload="none"></video>
+    <br>
+
+    <h3><code>loop</code></h3>
+    <p>Faz o vídeo se comportar em loop, reiniciando automáticamente ao finalizar</p>
+    <video src="animation.mp4" width="500" loop controls></video>
+    <br>
+
+    <h3><code>poster</code></h3>
+    <p>Define uma thumbnail para o vídeo</p>
+    <video src="animation.mp4" width="500" controls poster="thumb.jpg"></video>
+    <br><br><br>
+
+    <h2><code>&lt;audio&gt;</code></h2>
+    <p>Em suma funciona da mesma maneira que a tag <code>&lt;video&gt;</code> mas para audios, inclusive possuindo quase
+        os mesmos atributos</p>
+    <audio src="secret_machine.mp3" controls loop></audio>
+    <br><br>
+
+    <h2>&lt;iframe&gt;</h2>
+    <p>Significa inline frame, é um elemento que traz um conteúdo externo</p>
+    <iframe 
+        width="560" 
+        height="315" 
+        src="https://www.youtube.com/embed/FdE5G95B7Mg" 
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+    </iframe>
+    <p>Além dos atributos padrões de vídeo esse elemento também traz:</p>
+    <ul>
+        <li>frameborder - Define se o vídeo tem ou não borda</li>
+        <li>allow - significa permitir, traz algumas definições padrões da origem desse vídeo que é possível configurar</li>
+        <li>allowfullscreen - permite a tela cheia</li>
+    </ul>
+    <p>Importante lembrar que essa tag também funciona para mapas, áudios e qualquer mídia que suporte exportat iframe</p>
+</body>
+
+</html>
