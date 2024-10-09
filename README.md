@@ -1,9 +1,9 @@
 <div align="center">
-  <img height="100px" src="assets/rocketseat_logo.png" alt="Logo da Rocketseat" />
+  <img height="100px" src="https://iconsverse.vercel.app/icons?i=rocketseat" alt="Logo da Rocketseat" />
   <h3 align="center">Discover - Rocketseat</h3>
 </div>
 
-# 🎯Objetivo
+# 🔍Visão Geral
   Esta formação oferece 3 trilhas voltadas para desenvolvimento web, cobrindo desde os fundamentos iniciais de HTML, CSS e JavaScript até tecnologias mais avançadas, como React, Node.js e TypeScript. Além disso, aprofunda o conhecimento em bancos de dados com SQLite e no uso de ferramentas de versionamento e colaboração, como Git e GitHub. Meu objetivo é dominar essas tecnologias essenciais e aplicá-las de forma eficiente em projetos web, criando aplicações modernas, escaláveis e com boas práticas de desenvolvimento, tanto no front-end quanto no back-end.
 
 # 📚Conteúdo Abordado
@@ -15,8 +15,10 @@
 
   <img src="assets/rocketseat_discover_dark.jpg" alt="conteúdo do curso">
 
-### 👨‍💻Tecnologias Aprendidas
+<div align="center">
+  <h3>💻Tecnologias Aprendidas</h3>
   <img src="https://skillicons.dev/icons?i=html,css,js,nodejs,sqlite,git,github,react,ts&theme=dark" />
+</div>
 
 # 🏅Certificados
 <img src="assets/certificado_conectar.jpg" alt="Certificado Conectar">
